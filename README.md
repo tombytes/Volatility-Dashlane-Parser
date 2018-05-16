@@ -1,4 +1,4 @@
-# Volatility Dashlane Parser (vdp)
+# DashlaneParser (Plugin)
 ### Volatility Plugin to parse Dashlane-Generated passwords from memory dumps.
 Tested on Volatility 2.6 and Windows 10 datasets.
 
@@ -28,3 +28,7 @@ Password         | EpiRCYiE9NyU
 
 
 The data length from “KWGeneratedPassword” to the “AuthId” value is consistent, and the AuthId and Id UUIDs are of consistent length. The Domain value can vary in length, as can the Password. However, the password’s default length is 12. The mostly structured data, along with their use of brackets allows for easy data parsing. However, corrupted data missing the ending bracket would be collected until an end bracket was found. To prevent this overflow of useless data, the data length is capped for each category.
+
+# Plugin Usage
+
+C:\Users\Path\To\Volatility\Location\>vol.exe --plugins="C:\Users\Path\To\Downloaded\Plugins" -f memory.vmem DashlaneParser
