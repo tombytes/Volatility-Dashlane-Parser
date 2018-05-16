@@ -1,8 +1,11 @@
 # vdp (Plugin)
 ### Volatility Plugin to parse Dashlane-Generated passwords from memory dumps.
 Tested on:
+
 Volatility 2.6 
+
 Test Machine: Windows 10 Pro, 10.0.17134
+
 Test Dataset: Windows 10 Educate, 10.0.15063
 
 Dashlane is a password manager and digital wallet with over seven million users. It’s rated as “Best Overall” by Tom’s Guide, “Editor’s Choice” by PC Mag, and is lauded by Tech Radar, CSO Online and others. Dashlane features AES-256 encryption, Two-Factor Authentication, automatic logins, and compatibility across multiple devices, depending on your license. 
