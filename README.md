@@ -1,6 +1,9 @@
 # vdp (Plugin)
 ### Volatility Plugin to parse Dashlane-Generated passwords from memory dumps.
-Tested on Volatility 2.6 and Windows 10 datasets.
+Tested on:
+Volatility 2.6 
+Test Machine: Windows 10 Pro, 10.0.17134
+Test Dataset: Windows 10 Educate, 10.0.15063
 
 Dashlane is a password manager and digital wallet with over seven million users. It’s rated as “Best Overall” by Tom’s Guide, “Editor’s Choice” by PC Mag, and is lauded by Tech Radar, CSO Online and others. Dashlane features AES-256 encryption, Two-Factor Authentication, automatic logins, and compatibility across multiple devices, depending on your license. 
 
@@ -31,4 +34,5 @@ The data length from “KWGeneratedPassword” to the “AuthId” value is cons
 
 # Plugin Usage
 
-C:\Users\Path\To\Volatility\Location\>vol.exe --plugins="C:\Users\Path\To\Downloaded\Plugins" -f memory.vmem DashlaneParser
+Download vdp.py and place into the folder designated for your downloaded plugins (not the built-ins). You may need to create this folder. The following syntax can be used to call vdp. 
+C:\Users\Path\To\Volatility\Location\>vol.exe --plugins="C:\Users\Path\To\Downloaded\Plugins" -f memory.vmem vdp
