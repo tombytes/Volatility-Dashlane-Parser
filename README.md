@@ -9,7 +9,7 @@ Dashlane's AES-256 encryption only applies to passwords that are stored on their
 
 This data includes passwords, credit card numbers, receipts, PayPal information, and secure notes, which allows a user to store unformatted text of their choice. 
 
-While there are a multitude of data categories to parse, this version of Dashlane-Parser only collects Dashlane-generated passwords. 
+While there are a multitude of data categories to parse, version 1.0 only collects Dashlane-generated passwords. 
 
 ## Dashlane data stored in memory is mostly uniform. For example:
 ```
