@@ -1,4 +1,4 @@
-# DashlaneParser (Plugin)
+# vdp (Plugin)
 ### Volatility Plugin to parse Dashlane-Generated passwords from memory dumps.
 Tested on Volatility 2.6 and Windows 10 datasets.
 
